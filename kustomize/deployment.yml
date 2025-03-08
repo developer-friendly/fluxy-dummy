@@ -55,3 +55,4 @@ spec:
         supplementalGroups: []
         sysctls: []
       serviceAccountName: fluxy-dummy
+      terminationGracePeriodSeconds: 10
