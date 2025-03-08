@@ -41,7 +41,7 @@ jobs:
           cosign: true
           image-name: ghcr.io/${{ github.repository }}
           image-extra-tags: |
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/${{ github.repository }}:${{ github.event.pull_request.head.sha }}
           kubescape: true
 
   release-please:
