@@ -3,3 +3,4 @@ resources:
 
 patches:
   - path: deployment-merge.yml
+  - path: service-merge.yml
