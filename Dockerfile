@@ -7,7 +7,7 @@ ENV GO111MODULE=on \
 
 COPY . .
 
-RUN go mod tidy && go build -o fluxy-dummy
+RUN go mod tidy && go mod vendor && go build -o fluxy-dummy
 
 FROM scratch AS final
 
