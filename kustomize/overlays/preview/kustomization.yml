@@ -1,6 +1,7 @@
 resources:
   - ../../base
 
-patches:
-  - path: deployment-merge.yml
-  - path: service-merge.yml
+labels:
+  - includeSelectors: true
+    pairs:
+      preview: pr${PR_NUMBER}
