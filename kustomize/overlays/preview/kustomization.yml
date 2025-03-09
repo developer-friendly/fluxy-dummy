@@ -4,4 +4,4 @@ resources:
 labels:
   - includeSelectors: true
     pairs:
-      preview: pr${PR_NUMBER}
+      preview: ${PR_NUMBER}
